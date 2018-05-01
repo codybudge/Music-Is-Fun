@@ -12,23 +12,24 @@ function ItunesController(){
     var template = '';
     for (var i = 0; i < results.length; i++) {
       var result = results[i];
+      var custImg = result.albumArt.replace('60x60','250x250')
       template += `
       <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="${result.artworkUrl60}" alt="Card image cap">
+            <img class="card-img-top" src="${custImg}" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">${result.trackName}</h5>
-              <p class="card-text">${result.artistName}</p>
-              <p class="card-text">${result.collectionName}</p>
-              <p class="card-text">${result.collectionPrice}</p>
+              <h5 class="card-title">${result.title}</h5>
+              <p class="card-text">${result.artist}</p>
+              <p class="card-text">${result.collection}</p>
+              <p class="card-text">${result.price}</p>
               <audio controls="controls">
-                <source src="${result.previewUrl}" type="audio/wav">
+                <source src="${result.preview}" type="audio/wav">
               <a href="#" class="btn btn-primary">Play</a>
             </div>
           </div>
       `
     }
     var songElm = document.getElementById('songs');
-    songElm = innerHTML = template;
+    songElm.innerHTML = template;
     console.log(results)
   }
 
