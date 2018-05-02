@@ -1,16 +1,20 @@
 .card{
     width: 33%;
-    font-family: 'Limelight', cursive;
+    font-family: 'Nova Square', cursive;
     text-align: center
     
     
 }
 div#songs.container{
-    font-family: 'Limelight', cursive;
+    font-family: 'Nova Square', cursive;
     color: rgb(63, 61, 58);
     text-align: center
 }
 .display-4{
-    font-family: 'Limelight', cursive;
+    font-family:  'Nova Square', cursive;
     
+}
+.bgColor{
+color: #0960BD;
+background: #429FFD
 }
