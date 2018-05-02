@@ -14,18 +14,19 @@ function ItunesController(){
       var result = results[i];
       var custImg = result.albumArt.replace('60x60','250x250')
       template += `
-      <div class="card" style="width: 18rem;">
+      
+      <div class="card d-flex justify-content-center">
             <img class="card-img-top" src="${custImg}" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">${result.title}</h5>
               <p class="card-text">${result.artist}</p>
               <p class="card-text">${result.collection}</p>
               <p class="card-text">${result.price}</p>
-              <audio controls="controls">
+              <audio class="audioBar" controls="controls">
                 <source src="${result.preview}" type="audio/wav">
               <a href="#" class="btn btn-primary">Play</a>
             </div>
-          </div>
+          </div>        
       `
     }
     var songElm = document.getElementById('songs');
