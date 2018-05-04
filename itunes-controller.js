@@ -12,7 +12,7 @@ function ItunesController(){
     var template = '';
     for (var i = 0; i < results.length; i++) {
       var result = results[i];
-      var custImg = result.albumArt.replace('60x60','250x250')
+      var custImg = result.albumArt.replace('60x60','350x350')
       template += `
       
       <div class="card d-flex justify-content-center">

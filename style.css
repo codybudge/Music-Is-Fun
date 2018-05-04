@@ -1,7 +1,11 @@
+body{
+    background: #AAAAAA
+}
 .card{
     width: 33%;
     font-family: 'Nova Square', cursive;
-    text-align: center
+    text-align: center;
+    background: #fafafa;
     
     
 }
@@ -15,6 +19,6 @@ div#songs.container{
     
 }
 .bgColor{
-color: #0960BD;
-background: #429FFD
+color: #0B3846;
+background: #70D4B4;
 }
